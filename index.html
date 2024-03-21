@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animania - Best Online Anime Streaming Site</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+
+    <link href="stylesheets/reset.css" rel="stylesheet">
+    <link href="stylesheets/root.css" rel="stylesheet">
+    <link href="stylesheets/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logoAnimania.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="#">
+                    <img src="images/logoAnimania.png" alt="Logo" width="60" height="60"
+                        class="d-inline-block align-top">
+                </a>
+
+                <div class="navbar-nav flex-grow-1">
+
+                </div>
+
+                <a href="login.html" class="btn btn-primary me-2" role="button">Log In</a>
+
+                <button id="themeToggle" class="btn btn-primary">Mode Sombre</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="animania-intro mt-4">
+            <div class="container">
+                <h1 class="text-center mb-4">Qu'est-ce qu'Animania ?</h1>
+                <h4 class="text-center mb-5">Animania est la destination privilégiée des passionnés d'anime, offrant une
+                    vaste bibliothèque de titres en streaming allant des favoris classiques aux dernières sorties. Que
+                    vous soyez amateur d'aventures pleines d'action, de comédies romantiques ou de mystères intrigants,
+                    Animania a quelque chose pour chaque fan d'anime. Rejoignez notre communauté et explorez un monde
+                    sans fin d'anime !</h4>
+
+                <h2 class="mb-3">Questions Fréquemment Posées</h2>
+                <div class="accordion" id="faqAccordion">
+                    <!-- FAQ Item 1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Comment m'inscrire à Animania ?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                S'inscrire à Animania est facile et gratuit ! Cliquez simplement sur le bouton "Log In"
+                                en haut à droite de la page et suivez les instructions pour créer un nouveau compte.
+                                Commencez à explorer le vaste monde de l'anime dès aujourd'hui !
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Puis-je regarder des animes sur Animania gratuitement ?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Oui, Animania offre une large sélection de titres d'anime que vous pouvez regarder
+                                gratuitement avec des publicités occasionnelles. Pour une expérience sans publicité et
+                                un accès au contenu premium, envisagez de vous abonner à notre plan premium.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 4 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Animania est-il disponible sur mobile ?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Oui, Animania est accessible sur les appareils mobiles via notre site web
+                                mobile-friendly. Pour une expérience optimale, vous pouvez également télécharger notre
+                                application dédiée depuis l'App Store ou Google Play.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 5 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Comment puis-je contacter le support d'Animania ?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Si vous avez besoin d'assistance ou avez des questions, notre équipe de support est là
+                                pour vous aider. Veuillez nous contacter via notre page de contact sur le site, ou
+                                directement par email à support@animania.com.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 6 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                Y a-t-il des restrictions géographiques sur Animania ?
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Certains contenus sur Animania peuvent être soumis à des restrictions géographiques en
+                                raison de droits de diffusion. Ces restrictions sont indiquées sur les pages des titres
+                                concernés. Nous travaillons constamment à élargir notre accessibilité pour que nos
+                                utilisateurs du monde entier puissent profiter de notre contenu.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <!-- Carousel -->
+            <div class="carouselModify">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                            aria-label="Slide 6"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                            aria-label="Slide 7"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+                            aria-label="Slide 8"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
+                            aria-label="Slide 9"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9"
+                            aria-label="Slide 10"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/carousel1.jpeg" class="d-block w-100" alt="image-1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/carousel2.jpg" class="d-block w-100" alt="image-2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/carousel3.jpg" class="d-block w-100" alt="image-3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/carousel4.jpg" class="d-block w-100" alt="image-4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/carousel5.jpg" class="d-block w-100" alt="image-5">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/carousel6.jpg" class="d-block w-100" alt="image-6">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/carousel7.jpg" class="d-block w-100" alt="image-7">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/carousel8.jpeg" class="d-block w-100" alt="image-8">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/carousel9.jpg" class="d-block w-100" alt="image-9">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/carousel10.jpg" class="d-block w-100" alt="image-10">
+                            <!-- Corrected the file name -->
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="latest-releases">
+            <div class="container">
+                <h2 class="text-center mb-4">Nouveautés sur Animania</h2>
+                <div class="anime-cards-container">
+
+                    <div class="anime-card-row">
+                        <div class="anime-card">
+                            <img src="images/suggestion1.jpg" alt="Nouveauté Anime 1" class="anime-card-img">
+                            <div class="anime-card-content px-2">
+                                <h5>One Piece</h5>
+                                <p>Embarquez avec Luffy dans sa quête trépidante pour trouver le légendaire One Piece et conquérir le titre de Roi des Pirates!</p>
+                                <a href="login.html" class="btn btn-primary">Regarder maintenant</a>
+                            </div>
+                        </div>
+                        <div class="anime-card">
+                            <img src="images/suggestion2.jpg" alt="Nouveauté Anime 2" class="anime-card-img">
+                            <div class="anime-card-content px-2">
+                                <h5>Solo Leveling</h5>
+                                <p>Suivez Sung Jin-Woo, de chasseur le plus faible à souverain invincible, dans un monde infesté de portails monstrueux.</p>
+                                <a href="login.html" class="btn btn-primary">Regarder maintenant</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="anime-card-row extra-anime-card d-none">
+                        <div class="anime-card">
+                            <img src="images/suggestion3.jpg" alt="Nouveauté Anime 1" class="anime-card-img">
+                            <div class="anime-card-content px-2">
+                                <h5>Fairy Tail</h5>
+                                <p>Rejoignez Natsu et sa guilde magique dans des aventures épiques, où l'amitié est la plus puissante des magies !</p>
+                                <a href="login.html" class="btn btn-primary">Regarder maintenant</a>
+                            </div>
+                        </div>
+                        <div class="anime-card">
+                            <img src="images/suggestion4-mashle.jpg" alt="Nouveauté Anime 2" class="anime-card-img">
+                            <div class="anime-card-content px-2">
+                                <h5>Mashle</h5>
+                                <p>Découvrez comment Mash, dépourvu de magie, use de ses poings pour gravir les échelons dans un monde où la magie est tout.</p>
+                                <a href="login.html" class="btn btn-primary">Regarder maintenant</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="anime-card-row extra-anime-card d-none">
+                        <div class="anime-card">
+                            <img src="images/suggestion5-villainess-level-99.jpg" alt="Nouveauté Anime 1"
+                                class="anime-card-img">
+                            <div class="anime-card-content px-2">
+                                <h5>Villainess Level 99</h5>
+                                <p>Regardez Eumiella utiliser son intelligence et sa malice pour déjouer le destin de méchante prédestinée dans un jeu de romance fantastique.</p>
+                                <a href="login.html" class="btn btn-primary">Regarder maintenant</a>
+                            </div>
+                        </div>
+                        <div class="anime-card">
+                            <img src="images/suggestion6-classroom-of-the-elite.jpg" alt="Nouveauté Anime 2"
+                                class="anime-card-img">
+                            <div class="anime-card-content px-2">
+                                <h5>Classroom of the Elite</h5>
+                                <p>Suivez Ayanokoji, un lycéen au passé mystérieux, dans une école où seuls les plus rusés et les plus forts survivent.</p>
+                                <a href="login.html" class="btn btn-primary">Regarder maintenant</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="text-center mt-4">
+                    <button id="toggleButton" class="btn btn-primary" onclick="showMoreCards()">Voir plus</button>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="user-reviews py-5>">
+            <div class="container">
+                <h2 class="text-center mb-4">Ce que disent nos utilisateurs</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Alexandre L.</h5>
+                                <p class="card-text">"Animania a complètement changé ma façon de consommer l'anime. Leur
+                                    vaste sélection et la facilité d'utilisation sont inégalées. Je recommande vivement
+                                    !"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Marie-Claire D.</h5>
+                                <p class="card-text">"Grâce à Animania, j'ai découvert des séries que je n'aurais jamais
+                                    pensé regarder. Leur recommandation personnalisée est top !"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Sébastien T.</h5>
+                                <p class="card-text">"Le streaming sur Animania est tellement fluide, et je n'ai jamais
+                                    à me soucier des problèmes de buffering. C'est le paradis des fans d'anime !"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Léa K.</h5>
+                                <p class="card-text">"L'interface d'Animania est incroyablement intuitive. Trouver mes
+                                    séries préférées et découvrir de nouveaux titres est devenu si facile !"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Maxime R.</h5>
+                                <p class="card-text">"Animania offre une qualité d'image exceptionnelle, même sur
+                                    mobile. C'est ma plateforme de streaming préférée pour les animes."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Sophie M.</h5>
+                                <p class="card-text">"J'apprécie particulièrement la communauté d'Animania. Les
+                                    recommandations et les discussions me font toujours découvrir des perles rares."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Nicolas G.</h5>
+                                <p class="card-text">"Le catalogue d'Animania est sans cesse renouvelé. Je trouve
+                                    toujours quelque chose de nouveau à regarder, ce qui est fantastique !"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Emilie B.</h5>
+                                <p class="card-text">"En tant que fan d'anime depuis longtemps, je suis impressionnée
+                                    par la diversité et la qualité du contenu sur Animania. C'est de loin la meilleure
+                                    plateforme."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Julien V.</h5>
+                                <p class="card-text">"Le service client d'Animania est réactif et serviable. Ils ont
+                                    rapidement résolu mon problème et j'ai pu reprendre mon binge-watching sans
+                                    interruption !"</p>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+
+    </main>
+
+    <footer class="mt-5 py-4 mb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="mb-3">Animania</h3>
+                    <p class="mb-4">Le meilleur site de streaming d'anime en ligne. Rejoignez-nous et explorez des
+                        mondes
+                        inimaginables.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h3 class="mb-3">Abonnez-vous !</h3>
+                    <a href="login.html"><button type="submit" class="btn btn-primary">S'inscrire</button></a>
+                </div>
+            </div>
+            <div class="social-media mt-4">
+                <h3 class="mb-3 text-center">Suivez-nous</h3>
+                <p class="text-center rsLink">
+                    <a href="https://www.facebook.com/" target="_blank" class="text-light me-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/?lang=en-ca" target="_blank" class="text-light me-2"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" class="text-light me-2"><i class="fab fa-instagram"></i></a>
+                </p>
+            </div>
+            <div class="text-center mt-4">
+                © 2024 Animania. Tous droits réservés.
+            </div>
+        </div>
+    </footer>
+
+    <div id="inactivityMessage" class="popUp">
+        <h2>
+            Ce message sera push.
+        </h2>
+    </div>
+
+
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <!-- Your custom JavaScript here -->
+    <script type="module" src="/scripts/theme.js"></script>
+    <script type="module" src="/scripts/updateMessage.js"></script>
+    <script src="scripts/showMore.js"></script>
+    <script src="scripts/inactive.js"></script>
+    <script src="scripts/form.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

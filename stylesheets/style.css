@@ -1,0 +1,522 @@
+html {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+body {
+    width: 100%;
+    max-width: 1800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+header {
+    height: 80px;
+}
+
+/* DARK THEME */
+.dark-theme {
+    background-color: var(--color-bg-dark);
+    color: #fff !important;
+}
+
+.dark-theme body {
+    background-color: var(--color-bg-dark);
+}
+
+.dark-theme .navbar {
+    background-color: var(--color-dark) !important;
+}
+
+/* Style adjustments for the buttons if needed */
+.dark-theme .btn-primary {
+    background-color: var(--color-dark) !important;
+    border: solid 2px #fff !important;
+    color: #fff;
+}
+
+.dark-theme .btn-primary:hover,
+.dark-theme .btn-primary:focus {
+    background-color: #04274c!important;
+    border: solid 2px #fff !important;
+}
+
+.dark-theme .accordion {
+    box-shadow: 0px 0px 1px 2px rgb(255, 255, 255) !important;
+}
+
+.dark-theme .accordion-item {
+    box-shadow: 0px 0px 1px 1px rgb(255, 255, 255) !important;
+}
+
+.dark-theme .accordion-header {
+    border-bottom: solid 0.5px #ffffff94;
+}
+.dark-theme .animania-intro .accordion .accordion-item, .dark-theme .accordion-button {
+    color: #fff;
+    background-color: #000;
+}
+
+.dark-theme .animania-intro .accordion-button:not(.collapsed) {
+    background-color: var(--color-dark);
+}
+
+.dark-theme .anime-card {
+    box-shadow: 0px 0px 1px 2px rgb(255, 255, 255) !important;
+}
+
+.dark-theme .card { 
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0px 0px 1px 2px rgb(255, 255, 255) !important;
+}
+
+.dark-theme .card-title {
+    color: var(--color-dark);
+}
+
+.dark-theme footer .rsLink i {
+    color: #fff;
+}
+
+.dark-theme footer .rsLink i:hover {
+    color: var(--color-dark);
+}
+
+.dark-theme .popUp {
+    box-shadow: 0px 0px 1px 2px rgb(255, 255, 255);
+    color: #fff;
+    background-color: var(--color-dark);
+}
+
+
+.dark-theme .form-control {
+    color: #fff;
+    background-color: #000;
+    border: none !important;
+    box-shadow: 0px 0px 1px 2px rgb(255, 255, 255) !important;
+    border-radius: 15px;
+}
+
+.dark-theme .form-control:focus {
+    color: #fff;
+    background-color: #000;
+    box-shadow: 0px 0px 1px 3px var(--color-dark)!important;
+}
+
+.dark-theme .form-select {
+    color: #fff;
+    background-color: #000;
+    border: none !important;
+    box-shadow: 0px 0px 1px 2px rgb(255, 255, 255) !important;
+    border-radius: 15px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="%230553a5"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>');
+}
+
+.dark-theme .form-select:focus {
+    color: #fff;
+    background-color: #000;
+    box-shadow: 0px 0px 1px 3px var(--color-dark)!important;
+}
+
+.dark-theme ::placeholder {
+    color: #ffffff;
+}
+
+.dark-theme .form-control::placeholder {
+    color: #ffffff;
+}
+
+.dark-theme .form-select option {
+    border: none;
+    background-color: rgb(0, 0, 0); /* Arrière-plan blanc pour les options */
+    color: rgb(255, 255, 255); /* Couleur du texte pour les options */
+    border-radius: 15px;
+}
+
+.dark-theme :-webkit-autofill,
+.dark-theme :-webkit-autofill:hover, 
+.dark-theme :-webkit-autofill:focus,
+.dark-theme :-webkit-autofill,
+.dark-theme :-webkit-autofill:hover,
+.dark-theme :-webkit-autofill:focus,
+.dark-theme :-webkit-autofill,
+.dark-theme :-webkit-autofill:hover,
+.dark-theme :-webkit-autofill:focus {
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+
+
+/* LIGHT THEME */
+
+.light-theme {
+    background-color: var(--color-bg-light);
+    color: #000 !important;
+}
+
+.light-theme body {
+    color: var(--color-bg-light) !important;
+}
+
+.light-theme .navbar {
+    background-color: var(--color-light);
+}
+
+/* Style adjustments for the buttons if needed */
+.light-theme .btn-primary {
+    background-color: var(--color-light) !important;
+    border: solid 2px #000 !important;
+    color: #000;
+}
+
+.light-theme .btn-primary:hover,
+.light-theme .btn-primary:focus {
+    background-color: #80dfff !important;
+    border: solid 2px #000 !important;
+    color: #000;
+}
+
+.light-theme .accordion {
+    box-shadow: 0px 0px 1px 2px rgb(0, 0, 0) !important;
+}
+
+.light-theme .accordion-item {
+    box-shadow: 0px 0px 1px 1px rgb(0, 0, 0) !important;
+}
+
+.light-theme .accordion-header {
+    border-bottom: solid 0.5px #00000082;
+}
+
+.light-theme .dark-theme .animania-intro .accordion .accordion-item, .light-theme .accordion-button {
+    color: #000;
+    background-color: #fff;
+}
+
+.light-theme .animania-intro .accordion-button:not(.collapsed) {
+    background-color: var(--color-light);
+}
+
+.light-theme .anime-card {
+    box-shadow: 0px 0px 1px 2px rgb(0, 0, 0) !important;
+}
+
+.light-theme .card { 
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0px 0px 1px 2px rgb(0, 0, 0) !important;
+}
+
+.light-theme .card-title {
+    color: var(--color-light);
+}
+
+.light-theme footer .rsLink i {
+    color: #000;
+}
+
+.light-theme footer .rsLink i:hover {
+    color: var(--color-light);
+}
+
+.light-theme .popUp {
+    box-shadow: 0px 0px 1px 2px rgb(0, 0, 0) !important;
+    color: #000;
+    background-color: var(--color-light);
+}
+
+.light-theme .form-control {
+    color: #000000;
+    background-color: #ffffff;
+    border: none !important;
+    box-shadow: 0px 0px 1px 2px rgb(0, 0, 0) !important;
+    border-radius: 15px;
+}
+
+.light-theme .form-control:focus {
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 1px 3px var(--color-light)!important;
+}
+
+.light-theme .form-select {
+    color: #000000;
+    background-color: #ffffff;
+    border: none !important;
+    box-shadow: 0px 0px 1px 2px rgb(0, 0, 0) !important;
+    border-radius: 15px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="%2318b0e4"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>');
+}
+
+.light-theme .form-select:focus {
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 1px 3px var(--color-light)!important;
+}
+
+.light-theme ::placeholder {
+    color: #000000;
+}
+
+.light-theme .form-control::placeholder {
+    color: #000000;
+}
+
+.light-theme .form-select option {
+    border: none;
+    background-color: rgb(255, 255, 255); /* Arrière-plan blanc pour les options */
+    color: rgb(0, 0, 0); /* Couleur du texte pour les options */
+    border-radius: 15px;
+}
+
+.light-theme :-webkit-autofill,
+.light-theme :-webkit-autofill:hover, 
+.light-theme :-webkit-autofill:focus,
+.light-theme :-webkit-autofill,
+.light-theme :-webkit-autofill:hover,
+.light-theme :-webkit-autofill:focus,
+.light-theme :-webkit-autofill,
+.light-theme :-webkit-autofill:hover,
+.light-theme :-webkit-autofill:focus {
+    -webkit-text-fill-color: #000000 !important;
+}
+
+
+/* CSS commun */
+
+.btn-primary {
+    width: fit-content !important;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 15px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+.navbar {
+    justify-content: start;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-brand {
+    flex-grow: 1;
+}
+
+.animania-intro {
+    padding: 0;
+}
+
+.animania-intro p {
+    margin: auto;
+    line-height: 1.6;
+}
+
+.accordion, .accordion-item, .accordion-button, .accordion-button:not(.collapsed), .accordion-button:focus{
+    border: none !important;
+    border-radius: 0;
+    box-shadow: none !important;
+}
+
+.accordion {
+    border-radius: 15px !important;
+    overflow: hidden;
+}
+
+.accordion-button::after {
+    display: none;
+}
+    
+.accordion-body {
+    line-height: 1.5;
+}
+
+.carouselModify {
+    width: 90%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.carouselModify .carousel-inner img {
+    width: auto;
+    max-height: 400px;
+    margin: auto;
+}
+
+.carouselModify .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.carouselModify .carousel-control-prev,
+.carouselModify .carousel-control-next {
+    width: 4%;
+}
+
+.user-reviews {
+    padding: 0;
+}
+
+.user-reviews h2 {
+    margin-bottom: 30px;
+}
+
+.card {
+    transition: transform .3s;
+    cursor: pointer;
+    border-radius: 15px !important;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-text {
+    font-style: italic;
+}
+
+.anime-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+    gap: 1.5rem;
+    height: auto;
+    padding: 0;
+}
+
+.anime-card-row {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 6rem;
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+.anime-card {
+    cursor: pointer;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    width: 100%;
+    padding-inline: 0;
+    padding-block: 1rem;
+    transition: transform .3s;
+    border-radius: 15px !important;
+    overflow: hidden;
+}
+
+
+.anime-card-content {
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.anime-card:hover {
+    transform: translateY(-10px);
+}
+
+.card-anime .extra-anime-card {
+    transition: all 0.5s ease;
+}
+
+@media (max-width: 767px) {
+    .anime-card-row {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+}
+
+footer .rsLink {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+footer .rsLink i {
+    font-size: 20px;
+}
+
+.form-section {
+    display: none;
+}
+
+.form-section.active {
+    display: block;
+}
+
+.form-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.form-select {
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 30px 30px;
+}
+
+.form-select::after {
+    display: none;
+}
+
+.popUp {
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    width: 80%;
+    text-align: center;
+    transform: translate(-50%, -50%); 
+    padding: 20px; z-index: 1000; 
+    border-radius: 15px; 
+}
+
+::placeholder { 
+    font-style: var(--ff-body); 
+}
+
+.form-control::placeholder {
+    font-style: var(--ff-body); 
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    border: none;
+    -webkit-box-shadow: none;
+    transition: background-color 5000s ease-in-out 0s;
+}
